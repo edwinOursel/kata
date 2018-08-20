@@ -10,7 +10,7 @@ public class Panier {
 
     public void addProduit(Produit produit) {
         if (this.produits.containsKey(produit)) {
-            this.produits.put(produit, this.produits.get(produit));
+            this.produits.put(produit, this.produits.get(produit) + 1);
         } else {
             this.produits.put(produit, 1);
         }
